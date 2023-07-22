@@ -10,7 +10,7 @@ A collection of code, code shortcuts for future and current use.
 #
 
 
-#### [Wolf Chart](https://github.com/guzmanwolfrank/Python/tree/main/Wolf%20Chart):Program that retrieves prices and charts them out using tkinter framework.  
+#### [Wolf Chart](https://github.com/guzmanwolfrank/Python/tree/main/Wolf%20Chart): Program that retrieves prices and charts them out using tkinter framework.  
 
     OS:  Windows  
     Language: Python 
