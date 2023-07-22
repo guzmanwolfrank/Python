@@ -3,7 +3,7 @@ Created a program that allows you to choose which files you do not want to open 
 
     Are you tired of pesky programs that open when you start up your computer? 
     
-   The instructions can be found at : [instructions](https://github.com/guzmanwolfrank/startup/blob/main/Instructions.md)
+
 
 
 #
