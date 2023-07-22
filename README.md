@@ -8,6 +8,8 @@ A collection of code, code shortcuts for future and current use.
     Language: Python 
     Modules: winreg 
 #
+![image](https://github.com/guzmanwolfrank/Python/assets/29739578/94b18cc8-2816-492a-88d6-592c15f7c94f)
+#
 
 
 #### [Wolf Chart](https://github.com/guzmanwolfrank/Python/tree/main/Wolf%20Chart): Program that retrieves prices and charts them out using tkinter framework.  
