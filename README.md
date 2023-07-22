@@ -2,7 +2,7 @@
 A collection of code, code shortcuts for future and current use. 
 
 
-## Startup 
+### Startup 
 
 I created a program that manages startup files on windows boot. 
 
