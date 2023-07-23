@@ -27,4 +27,5 @@ $ pip install NAMEOFMODULE
 # 
 
 
-![qqqchart](https://github.com/guzmanwolfrank/Wolf-Chart/assets/29739578/dbc5e3b0-94d6-4ea3-815b-8ff98e9b8efb)
+
+![qqqchart](https://github.com/guzmanwolfrank/Python/assets/29739578/9b60a0b2-1752-447b-b887-80039344f363)
