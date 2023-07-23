@@ -22,10 +22,10 @@ $ pip install NAMEOFMODULE
 
 #
 
-![entry](https://github.com/guzmanwolfrank/Wolf-Chart/assets/29739578/9ed6f8b1-7e4b-4cf2-b5e1-594b15330bb2)
+![entry](https://github.com/guzmanwolfrank/Python/assets/29739578/eacce2d0-cbd5-476d-962c-5892839f5c10)
 
 # 
 
 
-![qqqchart](https://github.com/guzmanwolfrank/Wolf-Chart/assets/29739578/dbc5e3b0-94d6-4ea3-815b-8ff98e9b8efb)
 
+![qqqchart](https://github.com/guzmanwolfrank/Python/assets/29739578/9b60a0b2-1752-447b-b887-80039344f363)
