@@ -1,7 +1,31 @@
 ## Wolf Chart
 
-This program allows you to show stock prices. 
+This program allows you to show stock prices using the yfinance module. 
+
+To run the program,  first make sure you have Python, along with the following modules:  yfinance, matplotlib, tkinter 
+
+*tkinter comes pre installed in most python versions.
+
+
+To install the modules, open command prompt, and type:
+
+$ pip install NAMEOFMODULE 
+
+    for example:  $ pip install yfinance 
 
 
 
+ Download the python script github file, name it and run it in command prompt:
+
+        $ python YOURFILENAME.py 
+
+
+#
+
+![entry](https://github.com/guzmanwolfrank/Wolf-Chart/assets/29739578/9ed6f8b1-7e4b-4cf2-b5e1-594b15330bb2)
+
+# 
+
+
+![qqqchart](https://github.com/guzmanwolfrank/Wolf-Chart/assets/29739578/dbc5e3b0-94d6-4ea3-815b-8ff98e9b8efb)
 
