@@ -15,9 +15,9 @@ $ pip install NAMEOFMODULE
 
 
 
- Download the python script github file, name it and run it in command prompt:
+ Download the jupyter notebook github file, name it and run it in your IDE.  Otherwise, use the python version of the file and run it in command prompt after naming it and saving it:  YOURFILENAME.py
 
-        $ python YOURFILENAME.py 
+ 
 
 
 #
