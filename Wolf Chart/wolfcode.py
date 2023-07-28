@@ -5,7 +5,7 @@ import tkinter as tk
 
 def get_stock_data(symbol):
     stock = yf.Ticker(symbol)
-    return stock.history(period='10d', interval='15m')
+    return stock.history(period='1d', interval='15m')
 
 def plot_stock_chart(symbol):
     data = get_stock_data(symbol)
