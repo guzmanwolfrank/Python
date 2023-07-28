@@ -20,7 +20,9 @@ A collection of code, code shortcuts for future and current use.
 #
 ![entry](https://github.com/guzmanwolfrank/Python/assets/29739578/a7b58c08-ff5e-46f5-850e-d22aae243f9d)
 
-![qqqchart](https://github.com/guzmanwolfrank/Python/assets/29739578/f1bbdfee-625d-4f1a-bdac-5e9045939eb3)
+
+![image](https://github.com/guzmanwolfrank/Python/assets/29739578/c78778a3-7402-492a-bbeb-5ecfc18d5038)
+
 
 
 #
