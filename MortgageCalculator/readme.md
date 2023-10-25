@@ -1,19 +1,45 @@
-This is a standard mortgage calculator.  
+# Mortgage Calculator
 
-To run this program, download the file. 
-Open command prompt and make sure you have python downloaded.
-You can do this by typing:
+This is a standard mortgage calculator displayed on tkinter framework using python language. 
 
-            python --version 
+## Run the program 
 
-Next, run the program by moving to the appropriate folder in the prompt.
-Use cd to change drives. 
+1. To run this program, download the file. Open command prompt and make sure you have python downloaded. You can do this by typing:
 
-            Type:  python NAMEOFPROGRAM.py 
-
-The program should run and open a tkinter window. 
+        python --version
 
 
 
+
+2. Next, run the program by moving to the appropriate folder in the prompt. Use cd to change drives. Then type in the command prompt or terminal:
+
+
+
+        Type:  python NAMEOFPROGRAM.py
+
+
+3. The program should run and open a tkinter window.
 
 ![mortgcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/dbf9214d-982f-4bbc-980a-6c7839b7a526)
+
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Tech Stack
+
+**Client:** React, Redux, TailwindCSS
+
+**Server:** Node, Express
+
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
