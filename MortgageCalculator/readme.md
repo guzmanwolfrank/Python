@@ -15,7 +15,7 @@ You do not need to install tkinter separately as it is included in your Python i
 
 
 
-        Type:  python NAMEOFPROGRAM.py
+        Type:  python MORTGAGE.py
 
 
 3. The program should run and open a tkinter window.
