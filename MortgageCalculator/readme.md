@@ -11,18 +11,21 @@ This is a standard mortgage calculator displayed on tkinter framework using pyth
 You do not need to install tkinter separately as it is included in your Python installation. 
 
 
-2. Next, run the program by moving to the appropriate folder in the prompt. Use cd to change drives. Then type in the command prompt or terminal:
+2. Next, run the program by moving to the appropriate download folder in the command prompt. Use cd to change drives. Then type in the command prompt or terminal:
 
 
 
-        Type:  python MORTGAGE.py
+        Type:  python NameofFile.py
 
 
 3. The program should run and open a tkinter window.
 
 ![mortgcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/dbf9214d-982f-4bbc-980a-6c7839b7a526)
 
+- Alternatively -
+You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
 
+INSERT CARBON OF CODE HERE 
 
 ## License
 
