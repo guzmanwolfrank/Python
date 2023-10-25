@@ -25,6 +25,9 @@ You do not need to install tkinter separately as it is included in your Python i
 - Alternatively -
 You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
 
+![PYTHONCMDPROMPT2023-10-25 141900](https://github.com/guzmanwolfrank/Python/assets/29739578/748e342b-fb63-43af-8816-38ee76f134af)
+
+
 ![carbon (4)](https://github.com/guzmanwolfrank/Python/assets/29739578/145fc679-1255-4553-ab48-7612950c2d63)
 
 ## License
