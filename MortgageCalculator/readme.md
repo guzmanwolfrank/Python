@@ -8,7 +8,7 @@ This is a standard mortgage calculator displayed on tkinter framework using pyth
 
         python --version
 
-
+You do not need to install tkinter separately as it is included in your Python installation. 
 
 
 2. Next, run the program by moving to the appropriate folder in the prompt. Use cd to change drives. Then type in the command prompt or terminal:
