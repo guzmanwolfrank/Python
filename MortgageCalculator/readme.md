@@ -32,6 +32,7 @@ This is a standard mortgage calculator displayed on tkinter framework using pyth
 ## Tech Stack
 
 python==3.11.3
+<br/>
 tkinter==8.6
 
 
