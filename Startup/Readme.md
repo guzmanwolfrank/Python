@@ -21,12 +21,15 @@ You do not need to install winreg separately as it is included in your Python in
 3. The program should run and open.
 
 
-    When you run it on command prompt it should look like this: 
+    When you run it on command prompt it should look like this:
+
+
    ![runprog](https://user-images.githubusercontent.com/29739578/229173025-95577ed1-678b-4e2f-9af2-c102852be1d1.jpg)
 
 
 - Alternatively -
 You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
+   ![startupscript](https://user-images.githubusercontent.com/29739578/229172981-32b4bfd5-ddf4-4bdf-bfb0-e176160444a4.jpg)
 
 
 ## Tech Stack
@@ -46,6 +49,5 @@ python==3.11.3
 
 
    
-   ![startupscript](https://user-images.githubusercontent.com/29739578/229172981-32b4bfd5-ddf4-4bdf-bfb0-e176160444a4.jpg)
 
 
