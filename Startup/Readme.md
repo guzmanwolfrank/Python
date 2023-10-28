@@ -34,6 +34,10 @@ You do not need to install winreg separately as it is included in your Python in
 - Alternatively -
 You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
 
+
+
+
+
 ![startupscript](https://user-images.githubusercontent.com/29739578/229172981-32b4bfd5-ddf4-4bdf-bfb0-e176160444a4.jpg)
 
 
