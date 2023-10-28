@@ -26,7 +26,7 @@ You can also copy and paste the code in the  [code file](###) after typing "pyth
 
 ## Tech Stack
 
-winreg==Windows10 
+winreg==Windows10 </br>
 python==3.11.3
 
 ## Badges
