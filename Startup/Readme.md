@@ -4,15 +4,28 @@ Created a program that allows you to choose which files you do not want to open 
 
 ## Deployment
 
-To deploy this project run
+1. To run this program, download the file. Open command prompt and make sure you have python downloaded. You can do this by typing:
 
-```bash
-  npm run deploy
-```
+        python --version
 
+You do not need to install winreg separately as it is included in your Python installation. 
+
+
+2. Next, run the program by moving to the appropriate download folder in the command prompt. Use cd to change drives. Then type in the command prompt or terminal:
+
+
+
+        Type:  python NameofFile.py
+
+
+3. The program should run and open.
+
+- Alternatively -
+You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
 
 
 ## Tech Stack
+
 winreg==Windows10 
 python==3.11.3
 
