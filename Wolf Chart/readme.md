@@ -39,7 +39,7 @@ yfinance==0.2.18
 matplotlib==3.7.1
 tkinter==8.6
 python==3.11.3
-## Badges
+
 
 
 
