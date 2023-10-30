@@ -35,10 +35,10 @@ For example,
 
 ## Tech Stack
 
-yfinance==0.2.18
-matplotlib==3.7.1
-tkinter==8.6
-python==3.11.3
+yfinance==0.2.18 <br/>
+matplotlib==3.7.1 <br/>
+tkinter==8.6 <br/>
+python==3.11.3 <br/>
 
 
 
