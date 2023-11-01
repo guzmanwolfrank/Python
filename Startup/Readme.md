@@ -4,7 +4,7 @@ Created a program that allows you to choose which files you do not want to open 
 
 ## Deployment
 
-1. To run this program, download the file. Open command prompt and make sure you have python downloaded. You can do this by typing:
+1. To run this program, download the [file](https://github.com/guzmanwolfrank/Python/blob/main/Startup/startup_programs.py). Open command prompt and make sure you have python downloaded. You can do this by typing:
 
         python --version
 
