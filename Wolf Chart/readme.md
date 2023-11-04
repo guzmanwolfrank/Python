@@ -2,7 +2,17 @@
 
 This program allows you to show stock prices using the yfinance module.
 
+My motivation was to create a light, quick loading stock and futures quote application.  
+I wanted to create something that would load quickly and without sign on authentication.  Deleting the need for signon authorization 
+worked to cut load times.  
 
+## Challenges
+A challenge I overcame was coding for a new framework.  I had never used tkinter before this and the mortgage calculator project. 
+Tkinter has unique code patterns and functions within the Python language.  
+
+Some challenges I am currently facing are conversion to candlestick chart output.  I am currently getting an error message for a bug in the 'stock' variable. 
+
+I am also looking to upload the project as a .EXE program for easy download and launch on desktop or windows os tablets and laptops. 
 
 
 ## Deployment
