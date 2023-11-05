@@ -19,8 +19,8 @@ You do not need to install tkinter separately as it is included in your Python i
 
 
 3. The program should run and open a tkinter window.
+![mortcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/f22dfc2f-c37c-49e8-9071-110b6f9ee260)
 
-![mortgcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/dbf9214d-982f-4bbc-980a-6c7839b7a526)
 
 - Alternatively -
 You can also copy and paste the code in the  [code file](###) after typing "python" and ENTER into a command prompt or Windows Powershell.
