@@ -19,8 +19,8 @@ root.configure(bg="black")
 
 # Create labels
 principal_label = tk.Label(root, text="Principal Amount ($):", bg="black", fg="white")
-interest_rate_label = tk.Label(root, text="Annual Interest Rate (%):", bg="black", fg="white")
-years_label = tk.Label(root, text="Number of Years:", bg="black", fg="white")
+interest_rate_label = tk.Label(root, text="APR (%):", bg="black", fg="white")
+years_label = tk.Label(root, text="Duration:", bg="black", fg="white")
 result_label = tk.Label(root, text="", bg="black", fg="white")
 
 # Create entry widgets
