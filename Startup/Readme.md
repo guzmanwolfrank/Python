@@ -1,6 +1,7 @@
 # Startup 
 
 Created a program that allows you to choose which files you do not want to open automatically when you start up your Windows OS Computer.
+I created this program to target faster startup times as I noticed certain programs extended the time it took to load my desktop. 
 
 ## Deployment
 
