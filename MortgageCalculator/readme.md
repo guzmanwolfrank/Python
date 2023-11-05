@@ -20,7 +20,8 @@ You do not need to install tkinter separately as it is included in your Python i
 
 3. The program should run and open a tkinter window.
 <br/>
-![mortcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/f22dfc2f-c37c-49e8-9071-110b6f9ee260)
+
+[mortcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/f22dfc2f-c37c-49e8-9071-110b6f9ee260)
 
 
 - Alternatively -
