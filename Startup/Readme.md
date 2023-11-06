@@ -7,7 +7,7 @@ Created a program that allows you to choose which files you do not want to open 
 To minimize startup times on my laptop and computer.  I wanted to create a program which outlined the files being started up and then allowed me to delete them from the startup list. 
 
 ## Challenges 
-I found it challenging to compose an if statement that itirated within the winreg module. 
+I found it challenging to compose an if st atement that itirated within the winreg module. 
 
 ## Solution
 I was able to find [documentation](https://docs.python.org/3/library/winreg.html) which helped me form the if statement and necessary functions. 
