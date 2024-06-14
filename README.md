@@ -1,7 +1,7 @@
 # Python
 A collection of Python code projects, code shortcuts for future and current use. 
 #
-#  Quant Trading
+###  Quant Trading
 A collection of algorithmic backtests and trading tools written in python.
 
 N.B.:  All backtests are simple and simply looking for return criteria to be fulfilled.  Complex orders, size parlays, and defined stops are calculated in algorithm for deployment. 
@@ -71,7 +71,7 @@ Add slippage and look at the average open range in order to simulate entering a 
 
 ![mortcalc](https://github.com/guzmanwolfrank/Python/assets/29739578/e6b2fb45-b28f-472a-97a8-dd1506f245fd)
 
-# Data & SQL
+### Data & SQL
 
 
 This folder contains a collection of SQL and Data projects. 
