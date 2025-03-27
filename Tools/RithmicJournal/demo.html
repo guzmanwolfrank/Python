@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support and Resistance - Day Trading Essentials</title>
+    <style>
+        :root {
+            --primary-color: #2a4d69;
+            --secondary-color: #4b86b4;
+            --accent-color: #adcbe3;
+            --light-color: #e7eff6;
+            --dark-color: #1a3a57;
+            --success-color: #63c76a;
+            --danger-color: #e74c3c;
+            --text-color: #333;
+            --text-light: #f9f9f9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        .slide-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content-wrapper {
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 25%;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 24px;
+        }
+        
+        .sidebar-nav {
+            list-style: none;
+        }
+        
+        .sidebar-nav li {
+            margin-bottom: 16px;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .sidebar-nav li:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .sidebar-nav li.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+        }
+        
+        .main-content {
+            width: 75%;
+            padding: 32px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+        }
+        
+        .chart-container {
+            background-color: var(--light-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 24px 0;
+            position: relative;
+            height: 360px;
+        }
+        
+        .chart {
+            width: 100%;
+            height: 280px;
+            position: relative;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="white" /><path d="M0,70 L5,68 L10,74 L15,65 L20,60 L25,62 L30,55 L35,50 L40,57 L45,54 L50,40 L55,45 L60,43 L65,30 L70,35 L75,28 L80,25 L85,32 L90,28 L95,33 L100,30" stroke="%234b86b4" stroke-width="2" fill="none" /></svg>');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .support-line {
+            position: absolute;
+            bottom: 120px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--success-color);
+            border-radius: 4px;
+            z-index: 1;
+        }
+        
+        .resistance-line {
+            position: absolute;
+            bottom: 220px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--danger-color);
+            border-radius: 4px;
+            z-index: 1;
+        }
+        
+        .annotation {
+            position: absolute;
+            background-color: white;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .annotation-support {
+            bottom: 75px;
+            left: 20px;
+            border-left: 4px solid var(--success-color);
+        }
+        
+        .annotation-resistance {
+            bottom: 230px;
+            right: 20px;
+            border-left: 4px solid var(--danger-color);
+        }
+        
+        .annotation-arrow {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .arrow-support {
+            bottom: 105px;
+            left: 40px;
+            transform: rotate(45deg);
+            color: var(--success-color);
+        }
+        
+        .arrow-resistance {
+            bottom: 185px;
+            right: 40px;
+            transform: rotate(-135deg);
+            color: var(--danger-color);
+        }
+        
+        .key-points {
+            margin-top: 32px;
+            background-color: var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .key-points h3 {
+            color: var(--dark-color);
+            margin-bottom: 16px;
+        }
+        
+        .key-points ul {
+            padding-left: 20px;
+        }
+        
+        .key-points li {
+            margin-bottom: 12px;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-color);
+        }
+        
+        .btn-secondary {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--accent-color);
+        }
+        
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+        
+        .arrow-up {
+            border-bottom: 12px solid var(--danger-color);
+        }
+        
+        .arrow-down {
+            border-top: 12px solid var(--success-color);
+        }
+        
+        .legend {
+            display: flex;
+            gap: 24px;
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+        
+        .resistance-color {
+            background-color: var(--danger-color);
+        }
+        
+        .support-color {
+            background-color: var(--success-color);
+        }
+        
+        .example-section {
+            margin-top: 40px;
+        }
+        
+        .example-cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 24px;
+        }
+        
+        .example-card {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 16px;
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .example-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+        
+        .example-card p {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar, .main-content {
+                width: 100%;
+            }
+            
+            .example-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <header>
+            <h1>Support and Resistance</h1>
+            <div class="subtitle">Fundamental Concepts for Futures Day Trading</div>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="sidebar">
+                <ul class="sidebar-nav">
+                    <li class="active">Support & Resistance Basics</li>
+                    <li>Identifying Key Levels</li>
+                    <li>Trading Strategies</li>
+                    <li>Psychology of S&R</li>
+                    <li>Common Mistakes</li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                <h2>Understanding Support and Resistance</h2>
+                
+                <p><strong>Support and resistance</strong> are foundational concepts in technical analysis that represent price levels where market forces tend to prevent further movement in a particular direction.</p>
+                
+                <div class="chart-container">
+                    <div class="chart">
+                        <div class="support-line"></div>
+                        <div class="resistance-line"></div>
+                        <div class="annotation annotation-support">Support Zone</div>
+                        <div class="annotation annotation-resistance">Resistance Zone</div>
+                        <div class="annotation-arrow arrow-support">↑</div>
+                        <div class="annotation-arrow arrow-resistance">↓</div>
+                    </div>
+                    
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color resistance-color"></div>
+                            <span>Resistance: Where selling pressure increases</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color support-color"></div>
+                            <span>Support: Where buying pressure increases</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p><strong>Support</strong> is a price level where buying interest is sufficiently strong to overcome selling pressure. As price declines and approaches support, buyers enter the market, creating a "floor" that prevents the price from falling further.</p>
+                
+                <p><strong>Resistance</strong> is a price level where selling interest overcomes buying pressure. As price rises and approaches resistance, sellers enter the market, creating a "ceiling" that prevents the price from rising further.</p>
+                
+                <div class="key-points">
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li><strong>Role Reversal:</strong> Once broken, support can become resistance and vice versa</li>
+                        <li><strong>Strength Correlation:</strong> The more times a level is tested without breaking, the stronger it becomes</li>
+                        <li><strong>Volume Confirmation:</strong> High volume at support/resistance levels adds validity</li>
+                        <li><strong>Zones vs. Exact Levels:</strong> Consider support and resistance as zones rather than precise price points</li>
+                    </ul>
+                </div>
+                
+                <div class="example-section">
+                    <h3>Trading Applications</h3>
+                    <div class="example-cards">
+                        <div class="example-card">
+                            <h4>Bounce Trading</h4>
+                            <p>Enter long positions when price bounces off support or enter short positions when price rejects from resistance. Use a tight stop loss just beyond the level that was respected.</p>
+                        </div>
+                        <div class="example-card">
+                            <h4>Breakout Trading</h4>
+                            <p>Enter positions when price convincingly breaks through support or resistance. Look for increased volume and momentum to confirm the validity of the breakout.</p>
+                        </div>
+                        <div class="example-card">
+                            <h4>Range Trading</h4>
+                            <p>When price is consolidating between clear support and resistance levels, trade the range by buying at support and selling at resistance until a breakout occurs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary">Next: Identifying Key Levels</button>
+                    <button class="btn btn-secondary">Practice Exercise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
