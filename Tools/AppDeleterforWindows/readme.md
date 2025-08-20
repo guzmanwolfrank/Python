@@ -1,4 +1,8 @@
-# Program Uninstaller
+# App Deleter for Windows 
+
+by Wolfrank Guzman 
+
+
 
 A user-friendly Python application with a tkinter GUI for safely uninstalling programs on Windows systems. This tool provides a clean interface to manage installed software using Windows' built-in uninstallation mechanisms.
 
